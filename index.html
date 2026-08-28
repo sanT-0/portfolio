@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Santhosh S — Python Full-Stack Developer</title>
+<link rel="icon" type="img" href="ascets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="./stylesheet.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="canvas"></canvas>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Santhosh <span></span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-badge"><div class="status-dot"></div>Open to Opportunities</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wrap">
+    <div class="hero-greeting">Python · APIs · Data</div>
+    <h1 class="hero-name">
+      I'm<br>
+      <span class="grad">Santhosh</span>
+    </h1>
+    <div class="hero-typed-wrap">
+      <span class="typed-text" id="typed"></span><span class="cursor-blink"></span>
+    </div>
+    <p class="hero-bio">
+      I build practical products with <strong>Python, FastAPI, SQL, and automation</strong>.
+      My work brings together full-stack development, data analysis, and
+      <em>machine learning</em> to solve real-world business problems.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">See My Projects</a>
+      <a href="https://www.linkedin.com/in/santhosh-s599" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+    </div>
+    <div class="hero-chips">
+      <div class="chip"><span>PY</span>Python Full Stack</div>
+      <div class="chip"><span>DS</span>Data Science</div>
+      <div class="chip"><span>ML</span>Machine Learning</div>
+      <div class="chip"><span>26</span>B.Tech AI&amp;DS</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-avatar-col reveal">
+        <div class="avatar-frame"> 
+          <img src="ascets/img.png" alt="Santhosh" />
+          <!-- <div class="avatar-initials">YN</div> -->
+          <!-- <div class="corner tl"></div><div class="corner tr"></div>
+          <div class="corner bl"></div><div class="corner br"></div> -->
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-deg">B.Tech AI&DS</div>
+          <div class="edu-school">Tagore Institute of Engineering and Technology</div>
+          <div class="edu-year">2022 — 2026 · CGPA 7.61/10</div>
+        </div>
+      </div>
+
+      <div class="about-right reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title" style="margin-bottom:1.5rem">Developer. <span>Analyst.</span> Builder.</h2>
+        <p>
+          I'm a <strong>B.Tech Artificial Intelligence &amp; Data Science</strong> graduate with a practical focus on
+          Python backend development, REST APIs, SQL, data workflows, and machine learning.
+        </p>
+        <p>
+          During my internship at <strong>PySpiders, Bangalore</strong>, I worked with 15+ real-world datasets,
+          built dashboards, optimized queries, and automated recurring reporting workflows.
+        </p>
+        <p>
+          I am seeking an entry-level <strong>Python Full-Stack Developer</strong> opportunity where I can contribute,
+          learn quickly, and build scalable applications.
+        </p>
+        <div class="highlights">
+          <div class="hl-item">15+ datasets analyzed</div>
+          <div class="hl-item">4 interactive dashboards built</div>
+          <div class="hl-item">40% less manual extraction effort</div>
+          <div class="hl-item">FastAPI and REST API development</div>
+          <div class="hl-item">Automation with Python, SQL, and n8n</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="section-title reveal">Where I <span>learned by doing</span></h2>
+    <div class="experience-card reveal">
+      <div class="experience-heading">
+        <div>
+          <div class="experience-role">Python with Data Science Intern</div>
+          <div class="experience-company">PySpiders · Bangalore</div>
+        </div>
+        <div class="experience-date">01/2026 — 06/2026</div>
+      </div>
+      <ul class="experience-list">
+        <li>Developed Python scripts with Pandas and NumPy to clean, preprocess, transform, and analyze 15+ real-world datasets.</li>
+        <li>Performed EDA and created 4 interactive dashboards and visualizations with Matplotlib and Seaborn for KPI tracking.</li>
+        <li>Wrote and optimized SQL queries for extraction, joins, filtering, aggregation, and reporting, reducing manual effort by 40%.</li>
+        <li>Automated data processing and reporting workflows with Python and SQL to accelerate weekly business reporting.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label reveal">Technical Skills</div>
+    <h2 class="section-title reveal">What I <span>know</span></h2>
+    <div class="skills-outer">
+
+      <div class="skill-block reveal">
+        <div class="sb-head">
+          <div class="sb-icon">PY</div>
+          <div><div class="sb-title">Python Full Stack</div><div class="sb-sub">FastAPI · Django · REST APIs</div></div>
+        </div>
+        <div class="skill-row"><div class="sk-top"><span>Python</span><span class="sk-pct">95%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="95"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>FastAPI / REST APIs</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="85"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>Django / MVC-MVT</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="78"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>MySQL / Oracle SQL</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="82"></div></div></div>
+        <div class="tags-row">
+          <span class="tag">Python</span><span class="tag">Django</span><span class="tag">FastAPI</span>
+          <span class="tag">REST API</span><span class="tag">React.js</span><span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-block reveal">
+        <div class="sb-head">
+          <div class="sb-icon">DS</div>
+          <div><div class="sb-title">Data Science</div><div class="sb-sub">EDA · Visualization · SQL</div></div>
+        </div>
+        <div class="skill-row"><div class="sk-top"><span>Pandas / NumPy</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="88"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>Matplotlib / Seaborn</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="82"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>Statistics & EDA</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="80"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>SQL</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="80"></div></div></div>
+        <div class="tags-row">
+          <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span><span class="tag">SQL</span><span class="tag">Jupyter</span>
+        </div>
+      </div>
+
+      <div class="skill-block reveal">
+        <div class="sb-head">
+          <div class="sb-icon">ML</div>
+          <div><div class="sb-title">Machine Learning</div><div class="sb-sub">Scikit-learn · XGBoost · LSTM</div></div>
+        </div>
+        <div class="skill-row"><div class="sk-top"><span>Scikit-Learn</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="85"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>XGBoost</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="78"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>LSTM</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="70"></div></div></div>
+        <div class="skill-row"><div class="sk-top"><span>Model Evaluation</span><span class="sk-pct">76%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="76"></div></div></div>
+        <div class="tags-row">
+          <span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">LSTM</span>
+          <span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">n8n</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label reveal">Portfolio</div>
+    <h2 class="section-title reveal">My <span>Projects</span></h2>
+
+    <div class="proj-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="ml">ML / DS</button>
+      <button class="filter-btn" data-filter="data">Data / BI</button>
+    </div>
+
+    <div class="proj-grid">
+       <div class="proj-card featured reveal" data-cat="python">
+        <div class="proj-top">
+          <div class="proj-icon">WEB</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/portfolio" class="proj-btn" target="_blank" rel="noopener" aria-label="Open portfolio repository">GH</a>
+            <a href="https://sant-0.github.io/portfolio/" class="proj-btn" target="_blank" rel="noopener" aria-label="Open live portfolio">↗</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Frontend · Portfolio · Featured</div>
+          <div class="proj-name">Developer Portfolio Website</div>
+          <p class="proj-desc">Designed and built a responsive portfolio website to showcase Python full-stack projects, data science experience, certifications, GitHub work, and direct contact details.</p>
+          <div class="proj-stack">
+            <span class="stag">HTML5</span><span class="stag">CSS3</span>
+            <span class="stag">JavaScript</span><span class="stag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card featured reveal" data-cat="ml">
+        <div class="proj-top">
+          <div class="proj-icon">ML</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/Retail-Forecasting-System-with-Gmail-Automation" class="proj-btn" target="_blank">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Machine Learning · Automation · Featured</div>
+          <div class="proj-name">Retail Sales Forecasting &amp; Workflow Automation</div>
+          <p class="proj-desc">Built a retail sales forecasting system using XGBoost and LSTM, with automated n8n workflows for data processing, prediction generation, and email-based reporting.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">XGBoost</span>
+            <span class="stag">LSTM</span><span class="stag">FastAPI</span><span class="stag">n8n</span><span class="stag">Docker</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="proj-card featured reveal" data-cat="python">
+        <div class="proj-top">
+          <div class="proj-icon">PY</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/Python-Banking-Program" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Python · CLI Development</div>
+          <div class="proj-name">Python Banking Application</div>
+          <p class="proj-desc">Developed a console-based banking simulator with interactive menu navigation, real-time balance tracking, and secure deposit and withdrawal logic with robust input validation.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">Pattern Matching</span>
+            <span class="stag">CLI</span><span class="stag">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="data">
+        <div class="proj-top">
+          <div class="proj-icon">BI</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/shopindia-powerbi-dashboard" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Power BI · Data Analytics</div>
+          <div class="proj-name">E-Commerce Sales Performance Dashboard</div>
+          <p class="proj-desc">Created a 3-page interactive Power BI dashboard with 15+ advanced DAX measures and star schema modeling to analyze 150+ transactions and identify margin drains.</p>
+          <div class="proj-stack">
+            <span class="stag">Power BI</span><span class="stag">DAX</span>
+            <span class="stag">Power Query</span><span class="stag">Star Schema</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="data">
+        <div class="proj-top">
+          <div class="proj-icon">SQL</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0" class="proj-btn" target="_blank" rel="noopener" aria-label="Open GitHub profile">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Data Science · Internship Work</div>
+          <div class="proj-name">Dataset Analysis &amp; Reporting Workflows</div>
+          <p class="proj-desc">Applied Python, SQL, Pandas, and NumPy across 15+ datasets, turning raw business data into repeatable analysis, KPI dashboards, and weekly reporting workflows.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">SQL</span>
+            <span class="stag">Pandas</span><span class="stag">NumPy</span><span class="stag">Seaborn</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="ml">
+        <div class="proj-top">
+          <div class="proj-icon">AI</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/Python-Chatbot" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Conversational AI · Python</div>
+          <div class="proj-name">Python Chatbot</div>
+          <p class="proj-desc">Engineered a conversational AI chatbot with intent classification, context handling, and predefined intents using TensorFlow/Keras and Flask.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">TensorFlow</span>
+            <span class="stag">Keras</span><span class="stag">Flask</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="data">
+        <div class="proj-top">
+          <div class="proj-icon">EDA</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/Global-Development-Analytics" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Exploratory Data Analysis</div>
+          <div class="proj-name">Global Development Analytics</div>
+          <p class="proj-desc">Analyzed more than 50 years of global development indicators from the Gapminder dataset to surface trends in health, wealth, and population growth.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">Pandas</span>
+            <span class="stag">Jupyter</span><span class="stag">Visualization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="python">
+        <div class="proj-top">
+          <div class="proj-icon">DSA</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/leetcode-solutions" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Algorithms · SQL</div>
+          <div class="proj-name">LeetCode Solutions</div>
+          <p class="proj-desc">A collection of Python and SQL solutions covering data structures, algorithms, database problems, and interview preparation with clean, optimized implementations.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">SQL</span>
+            <span class="stag">DSA</span><span class="stag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured reveal" data-cat="python">
+        <div class="proj-top">
+          <div class="proj-icon">QUIZ</div>
+          <div class="proj-actions">
+            <a href="https://github.com/sanT-0/Python-Quiz" class="proj-btn" target="_blank" rel="noopener" aria-label="Open project repository">GH</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Python · CLI Development</div>
+          <div class="proj-name">Python Quiz</div>
+          <p class="proj-desc">Built a command-line quiz app covering Python history and syntax fundamentals, with a simple interactive flow for practicing core language concepts.</p>
+          <div class="proj-stack">
+            <span class="stag">Python</span><span class="stag">CLI</span>
+            <span class="stag">Input Validation</span>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <div class="section-inner">
+    <div class="section-label reveal">Credentials</div>
+    <h2 class="section-title reveal">Certifications & <span>Achievements</span></h2>
+    <div class="certs-grid">
+      <a href="https://www.udemy.com/certificate/UC-75b4dfcb-2270-4ecf-b070-8b3270f8fa95/" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">Python for Machine Learning</div><div class="cert-issuer">Udemy</div><div class="cert-year">2025 · View certificate ↗</div></div>
+      </a>
+      <a href="https://www.udemy.com/certificate/UC-760fb432-a6b1-4e1c-8b90-2b072e2873c5/" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">Python for beginners</div><div class="cert-issuer">udemy</div><div class="cert-year">2025 · View certificate ↗</div></div>
+      </a>
+      <a href="https://www.udemy.com/certificate/UC-cca6f95c-0145-42ad-b0d1-0fd724194b5e/" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">HTML and CSS for Beginners From Basic to Advance</div><div class="cert-issuer">Udemy · Stephen Koel Soren</div><div class="cert-year">2025 · View certificate ↗</div></div>
+      </a>
+      <a href="https://www.udemy.com/certificate/UC-875bd07e-b039-4afc-b60a-ae73b1ce5c52/" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">From Prompt Engineering to Agent Engineering</div><div class="cert-issuer">Udemy</div><div class="cert-year">2025 · View certificate ↗</div></div>
+      </a>
+      <a href="https://www.linkedin.com/posts/santhosh599_happy-to-announce-the-completion-of-my-certificate-activity-7388186165541179392-hWMw" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">Data Science Fundamentals</div><div class="cert-issuer">IBM Cloud DigiLabs</div><div class="cert-year">2025 · View post ↗</div></div>
+      </a>
+      <a href="https://www.udemy.com/certificate/UC-06aa3f7c-9195-4d53-aee2-d6254e413ef0/" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">🏅</div>
+        <div><div class="cert-name">Microsoft Excel: Beginner to Advanced</div><div class="cert-issuer">udemy</div><div class="cert-year">2025 · View certificate ↗</div></div>
+      </a>
+      <a href="https://www.linkedin.com/posts/santhosh599_python-datascience-internship-activity-7470398950286557185-w_N2" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">★</div>
+        <div><div class="cert-name">Python with Data Science Internship</div><div class="cert-issuer">PySpiders · LinkedIn</div><div class="cert-year">2026 · View post ↗</div></div>
+      </a>
+      <a href="https://courses.redteamleaders.com/exam-completion/d60b63a0284ba15e" target="_blank" rel="noopener" class="cert-card reveal cert-link">
+        <div class="cert-icon">SEC</div>
+        <div><div class="cert-name">Cybersecurity Exam Completion</div><div class="cert-issuer">Certificate · redteamleaders</div><div class="cert-year">2025 · View post ↗</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label reveal">Hire Me</div>
+    <h2 class="section-title reveal">Let's <span>connect</span></h2>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <p>I'm actively looking for an <strong style="color:var(--accent)">entry-level opportunity</strong> in Python full-stack development, data, or automation. If you have a role where I can build useful systems and keep learning, let's talk.</p>
+        <div class="contact-links">
+          <a href="mailto:santhoshsankar599@gmail.com" class="clink">
+            <div class="clink-icon">✉</div>
+            <div><span class="clink-label">Email</span>santhoshsankar599@gmail.com</div>
+          </a>
+          <a href="https://github.com/sanT-0" target="_blank" class="clink">
+            <div class="clink-icon">GH</div>
+            <div><span class="clink-label">GitHub</span>github.com/sanT-0</div>
+          </a>
+          <a href="https://linkedin.com/in/santhosh-s599" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon">in</div>
+            <div><span class="clink-label">LinkedIn</span>linkedin.com/in/santhosh-s599</div>
+          </a>
+          <a href="https://leetcode.com/u/sanT-0/" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon">LC</div>
+            <div><span class="clink-label">leetcode</span>leetcode.com/u/sanT-0</div>
+          </a>
+        </div>
+      </div>
+      <div class="form-col reveal">
+        <div class="fg"><label class="flbl" for="fn">Name</label><input class="finp" type="text" placeholder="Your Name" id="fn" required/></div>
+        <div class="fg"><label class="flbl" for="fe">Email</label><input class="finp" type="email" placeholder="you@example.com" id="fe" required/></div>
+        <div class="fg"><label class="flbl" for="fs">Subject</label><input class="finp" type="text" placeholder="Internship / Job Opportunity" id="fs" required/></div>
+        <div class="fg"><label class="flbl" for="fm">Message</label><textarea class="ftxt" placeholder="Tell me about the role or project..." id="fm" required></textarea></div>
+        <button class="fsub" id="sbtn" type="button">Send Message →</button>
+        <p class="fmsg" id="fmsg" role="status">Your email app will open with the message ready to send.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed & built by <span>Santhosh S</span> · 2026 · Made with 💙 &amp; lots of ☕</p>
+</footer>
+<script>
+const contactButton = document.getElementById('sbtn');
+const contactMessage = document.getElementById('fmsg');
+
+contactButton.addEventListener('click', () => {
+  const name = document.getElementById('fn').value.trim();
+  const email = document.getElementById('fe').value.trim();
+  const subject = document.getElementById('fs').value.trim();
+  const message = document.getElementById('fm').value.trim();
+
+  if (!name || !email || !subject || !message) {
+    contactMessage.textContent = 'Please complete all fields before sending.';
+    contactMessage.style.display = 'block';
+    return;
+  }
+
+  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+  const mailtoUrl = `mailto:santhoshsankar599@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  contactMessage.textContent = 'Your email app will open with the message ready to send.';
+  contactMessage.style.display = 'block';
+  ['fn', 'fe', 'fs', 'fm'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  window.location.href = mailtoUrl;
+});
+</script>
+</body>
+</html>
