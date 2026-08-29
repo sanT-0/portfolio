@@ -58,6 +58,23 @@ document.querySelectorAll('#hero .reveal').forEach(el=>el.classList.add('visible
 // Nav scroll
 window.addEventListener('scroll',()=>{document.getElementById('navbar').style.background=window.scrollY>50?'rgba(5,10,15,0.97)':'rgba(5,10,15,0.85)';});
 
+// Mobile menu
+const navToggle=document.querySelector('.nav-toggle');
+const navLinks=document.querySelector('.nav-links');
+if(navToggle && navLinks){
+  navToggle.addEventListener('click',()=>{
+    const isOpen=navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.querySelectorAll('a').forEach(link=>{
+    link.addEventListener('click',()=>{
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+    });
+  });
+}
+
 // Project filter
 document.querySelectorAll('.filter-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
