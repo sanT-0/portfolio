@@ -1,8 +1,8 @@
-# Santhosh S - Developer Portfolio
+﻿# Santhosh S - Developer Portfolio
 
 A responsive single-page portfolio for Santhosh S, a Python Full-Stack Developer and Artificial Intelligence and Data Science graduate.
 
-The portfolio presents professional experience, technical skills, GitHub projects, certifications, and contact information in a dark developer-focused interface.
+The portfolio presents professional experience, technical skills, GitHub projects, certifications, and contact information in a clean, responsive interface.
 
 ## Live Portfolio
 
@@ -17,30 +17,31 @@ The main entry point is `index.html`.
 - GitHub: https://github.com/sanT-0
 - LinkedIn: https://www.linkedin.com/in/santhosh-s599
 - Email: santhoshsankar599@gmail.com
+- LeetCode: https://leetcode.com/u/sanT-0/
 
 ## Features
 
 - Responsive layout for desktop, tablet, and mobile screens
-- Hero section with animated role text
+- Hero section with engineering focus and resume download links
 - About section with education details and professional highlights
-- Internship experience section for PySpiders
-- Skills grouped by Python full-stack, data science, and machine learning
+- Experience section covering current DGi WORX and previous PySpiders internships
+- Technical skills grouped by backend, frontend, data and storage, delivery and operations, and ML and automation
+- A “How I Work” section describing the development approach
 - Project cards linked to GitHub repositories
-- Portfolio website card linked to the source repository and live site
 - Project filtering by Python, ML / DS, and Data / BI
 - Certification cards linked to Udemy and LinkedIn verification pages
-- Animated particle background
 - Scroll reveal animations
-- Custom cursor and hover interactions on desktop
+- Mobile navigation toggle
 - Contact form with client-side validation
 - Static contact workflow using a prefilled `mailto:` link
 - GitHub, LinkedIn, LeetCode, and email contact links
+- Reduced-motion support
 
 ## Portfolio Sections
 
 ### Hero
 
-The hero section introduces Santhosh S as a Python Full-Stack Developer with a focus on APIs, data, machine learning, and automation.
+The hero section introduces Santhosh S and highlights software, API, and automation work, with links to projects, contact information, and the resume.
 
 ### About
 
@@ -50,15 +51,19 @@ The About section includes:
 - Tagore Institute of Engineering and Technology
 - CGPA: 7.61 / 10
 - Graduation period: 2022 - 2026
-- Internship and career objective highlights
+- Current focus on backend engineering and Cloud / DevOps learning
+- Professional highlights and working principles
 
 ### Experience
 
-The experience section describes the Python with Data Science Internship at PySpiders, Bangalore, from January 2026 to June 2026.
+The experience section currently includes:
 
-Highlighted work includes:
+- **Full Stack Developer Intern, DGi WORX** — Chennai, India, October 2026 to present. Focus areas include backend services and REST APIs, frontend and database-driven application concepts, debugging, and Cloud / DevOps practices.
+- **Python with Data Science Intern, PySpiders** — Bengaluru, India, January 2026 to June 2026.
 
-- Cleaning, preprocessing, transforming, and analyzing 15+ datasets
+PySpiders internship highlights include:
+
+- Cleaning, preprocessing, transforming, and analyzing 15+ real-world datasets
 - Creating four interactive dashboards and visualizations
 - Writing and optimizing SQL queries
 - Reducing manual data extraction effort by 40%
@@ -66,22 +71,21 @@ Highlighted work includes:
 
 ### Skills
 
-The skills section covers the following areas:
+The current skills section groups tools and technologies into:
 
-- Programming: Python, JavaScript, SQL
-- Databases: MySQL, Oracle SQL
-- Backend: Django, FastAPI, REST APIs, Swagger, Postman
-- Frontend: HTML5, CSS3, JavaScript, React.js
-- Data science: NumPy, Pandas, Matplotlib, Seaborn
-- Machine learning: Scikit-learn, XGBoost, LSTM
-- Tools: Git, GitHub, Docker, Jupyter Notebook, VS Code, n8n
-- Business intelligence: Power BI, Advanced Excel
-- Concepts: OOP, data structures, exception handling, CRUD, API integration, MVC / MVT
-- Environment: AWS basics and Linux basics
+- Backend engineering: Python, FastAPI, Django, Flask, REST APIs, Pydantic
+- Frontend: React, JavaScript, HTML, CSS
+- Data and storage: MySQL, SQL, SQLAlchemy, Pandas, NumPy, Matplotlib
+- Delivery and operations: Git, GitHub, Docker, Linux, CI/CD learning
+- ML and automation: Scikit-learn, XGBoost, n8n, EDA, SHAP (learning / project use)
+
+### How I Work
+
+The approach section describes four steps: understand the problem, build in small steps, test and document, and deploy and improve.
 
 ### Projects
 
-The portfolio currently includes these project entries:
+The portfolio includes these project entries:
 
 1. **Retail Sales Forecasting and Workflow Automation**
    - XGBoost and LSTM forecasting system
@@ -153,10 +157,13 @@ The credentials section includes verified or linked certificates for:
 Portfolio/
 |-- index.html                Main portfolio page
 |-- stylesheet.css            Site styles and responsive layout
-|-- script.js                 Interactions and animations
+|-- script.js                 Navigation, project filters, and scroll reveals
 |-- ascets/
 |   |-- img.png               Profile image
 |   |-- logo.png              Favicon
+|   |-- Santhosh_S_Developer_resume.pdf
+|-- .github/workflows/
+|   |-- static.yml            GitHub Pages deployment workflow
 |-- README.md                 Project documentation
 ```
 
@@ -199,7 +206,7 @@ The contact form is designed for a static website. It validates the required fie
 
 The interaction code is split between `script.js` and the inline script at the end of `index.html`:
 
-1. `script.js` handles the cursor, particles, typing animation, scroll reveals, navigation state, and project filters.
+1. `script.js` handles scroll reveals, mobile navigation, and project filters.
 2. The inline script at the end of `index.html` validates the required contact fields.
 3. The visitor's name, email, subject, and message are added to a `mailto:` URL.
 4. The visitor's default email application opens with a prefilled draft.
@@ -255,8 +262,8 @@ The project has no npm or Python dependencies.
 
 It loads two fonts from Google Fonts:
 
-- Syne
-- Space Mono
+- DM Sans
+- Instrument Serif
 
 An internet connection is needed for those fonts. The page still works with fallback fonts if Google Fonts is unavailable.
 
@@ -269,8 +276,6 @@ The portfolio uses standard HTML, CSS, and JavaScript APIs and is intended for c
 - Mozilla Firefox
 - Safari
 
-The custom cursor is primarily intended for pointer-based desktop devices. Touch devices use the normal browser interaction model.
-
 ## Deployment
 
 Because this is a static project, it can be deployed using:
@@ -281,7 +286,11 @@ Because this is a static project, it can be deployed using:
 - Cloudflare Pages
 - Any web server that can serve HTML files
 
-The portfolio is hosted on GitHub Pages at https://sant-0.github.io/portfolio/. Place the project files in the repository's published branch and enable Pages from the repository settings. GitHub Pages automatically serves `index.html` as the default homepage.
+The portfolio is hosted on GitHub Pages at https://sant-0.github.io/portfolio/. The repository includes `.github/workflows/static.yml` for the GitHub Pages deployment workflow. GitHub Pages serves `index.html` as the default homepage.
+
+## Resume Download
+
+The navigation and hero download links currently point to `./resume.pdf`. The resume file in the repository is `ascets/Santhosh_S_Developer_resume.pdf`; make sure a root-level `resume.pdf` is present or update the links in `index.html` to point to the file under `ascets/`.
 
 ## Author
 
