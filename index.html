@@ -6,65 +6,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Santhosh S — Python Full-Stack Developer</title>
 <link rel="icon" type="img" href="ascets/logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./stylesheet.css">
   <script src="./script.js" defer></script>
 </head>
 <body>
   
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
-<canvas id="canvas"></canvas>
-
 <nav id="navbar">
   <a href="#hero" class="nav-logo">
     <span class="nav-name">Santhosh</span>
     <span class="nav-role">Developer • Data • AI</span>
   </a>
 
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <ul class="nav-links">
+  <ul class="nav-links" id="primary-navigation">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="./resume.pdf" download="Santhosh-S-Resume.pdf">Resume</a></li>
   </ul>
-  <div class="nav-badge"><div class="status-dot"></div>Open to Opportunities</div>
+  <div class="nav-badge"><div class="status-dot"></div>Open to opportunities</div>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
+  <div class="hero-layout">
   <div class="hero-wrap">
-    <div class="hero-greeting">Python · APIs · Data</div>
-    <h1 class="hero-name">
-      I'm<br>
-      <span class="grad">Santhosh</span>
-    </h1>
-    <div class="hero-typed-wrap">
-      <span class="typed-text" id="typed"></span><span class="cursor-blink"></span>
-    </div>
+    <div class="hero-greeting">Python · API · thoughtful automation</div>
+    <div class="hero-typed-wrap">Hi, I’m <span class="typed-text" id="typed">Santhosh</span></div>
+    <!-- <p class="hero-eyebrow">Portfolio — 2026</p> -->
+    <h1 class="hero-name">I build reliable<br><span class="grad">software, APIs, and<br>practical digital products.</span></h1>
     <p class="hero-bio">
       I build practical products with <strong>Python, FastAPI, SQL, and automation</strong>.
       My work brings together full-stack development, data analysis, and
-      <em>machine learning</em> to solve real-world business problems.
+      <em>DevOps</em> to solve real-world business problems.
     </p>
     <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">See My Projects</a>
-      <a href="https://www.linkedin.com/in/santhosh-s599" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+      <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+      <a href="#contact" class="btn btn-outline">Get in touch</a>
+      <a href="./resume.pdf" class="btn btn-outline" download="Santhosh-S-Resume.pdf">Download Resume</a>
     </div>
-    <div class="hero-chips">
-      <div class="chip"><span>PY</span>Python Full Stack</div>
-      <div class="chip"><span>DS</span>Data Science</div>
-      <div class="chip"><span>ML</span>Machine Learning</div>
-      <div class="chip"><span>26</span>B.Tech AI&amp;DS</div>
+    <div class="hero-chips" aria-label="Areas of focus"><span>Python development</span><span>FASTAPI</span><span>DevOps</span><span>AI &amp; Data Science</span></div>
+  </div>
+  <aside class="hero-index" aria-label="Engineering focus">
+    <div class="hero-index-heading"><p class="hero-index-label">Engineering focus</p></div>
+    <div class="hero-focus-list">
+      <article class="hero-focus-item"><span class="hero-focus-number">01</span><div><h2>Build</h2><p>APIs, full-stack products, and maintainable application foundations.</p></div></article>
+      <article class="hero-focus-item"><span class="hero-focus-number">02</span><div><h2>Automate</h2><p>Repeatable workflows, tests, and delivery pipelines.</p></div></article>
+      <article class="hero-focus-item"><span class="hero-focus-number">03</span><div><h2>Deploy</h2><p>Learning to ship, observe, and improve applications in production.</p></div></article>
     </div>
+    <p class="hero-index-note">Code with purpose. Ship with care.</p>
+  </aside>
   </div>
 </section>
 
@@ -73,43 +73,26 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-avatar-col reveal">
-        <div class="avatar-frame"> 
-          <img src="ascets/img.png" alt="Santhosh" />
-          <!-- <div class="avatar-initials">YN</div> -->
-          <!-- <div class="corner tl"></div><div class="corner tr"></div>
-          <div class="corner bl"></div><div class="corner br"></div> -->
+    <div class="about-grid about-grid-wide">
+      <aside class="about-profile reveal" aria-label="Quick profile">
+        <div class="about-profile-photo"><img src="ascets/img.png" alt="Santhosh" /></div>
+        <div class="about-profile-tag"><span aria-hidden="true"></span>Software • Systems • Learning</div>
+        <div class="about-quick-profile">
+          <p class="about-profile-label">Quick profile</p>
+          <div><strong>Education</strong><p>B.Tech – Artificial Intelligence &amp; Data Science 2022 — 2026 • CGPA 7.61/10</p></div>
+          <div><strong>Current focus</strong><p>Backend engineering + Cloud/DevOps</p></div>
         </div>
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-deg">B.Tech AI&DS</div>
-          <div class="edu-school">Tagore Institute of Engineering and Technology</div>
-          <div class="edu-year">2022 — 2026 · CGPA 7.61/10</div>
-        </div>
-      </div>
-
-      <div class="about-right reveal">
-        <div class="section-label">About Me</div>
-        <h2 class="section-title" style="margin-bottom:1.5rem">Developer. <span>Analyst.</span> Builder.</h2>
-        <p>
-          I'm a <strong>B.Tech Artificial Intelligence &amp; Data Science</strong> graduate with a practical focus on
-          Python backend development, REST APIs, SQL, data workflows, and machine learning.
-        </p>
-        <p>
-          During my internship at <strong>PySpiders, Bangalore</strong>, I worked with 15+ real-world datasets,
-          built dashboards, optimized queries, and automated recurring reporting workflows.
-        </p>
-        <p>
-          I am seeking an entry-level <strong>Python Full-Stack Developer</strong> opportunity where I can contribute,
-          learn quickly, and build scalable applications.
-        </p>
-        <div class="highlights">
-          <div class="hl-item">15+ datasets analyzed</div>
-          <div class="hl-item">4 interactive dashboards built</div>
-          <div class="hl-item">40% less manual extraction effort</div>
-          <div class="hl-item">FastAPI and REST API development</div>
-          <div class="hl-item">Automation with Python, SQL, and n8n</div>
+      </aside>
+      <div class="about-right about-copy reveal">
+        <div class="about-eyebrow">About Me</div>
+        <h2 class="about-heading">Developer. <span>Problem solver.</span><br>Always building.</h2>
+        <p class="about-lead">I'm a <strong>B.Tech Artificial Intelligence &amp; Data Science</strong>  graduate interested in building useful software from the API layer to deployment.</p>
+        <p>My work so far includes Python-based development, REST APIs, database-backed applications, data analysis, and machine-learning workflows. Through projects and internships, I'm strengthening the fundamentals that make software maintainable: clear structure, validation, testing, version control, and documentation.</p>
+        <p>I'm currently a <strong> Full Stack Developer Intern at DGi WORX</strong> in Chennai. I'm also developing my Cloud/DevOps skills through hands-on practice with Linux, containers, CI/CD, and deployment concepts.</p>
+        <div class="about-principles" aria-label="How I work">
+          <div class="about-principle"><span>01</span><div><strong>Build with clarity</strong><p>Readable, maintainable code</p></div></div>
+          <div class="about-principle"><span>02</span><div><strong>Learn by shipping</strong><p>Projects with real outcomes</p></div></div>
+          <div class="about-principle"><span>03</span><div><strong>Improve continuously</strong><p>Test, document, iterate</p></div></div>
         </div>
       </div>
     </div>
@@ -120,24 +103,40 @@
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="section-inner">
+  <div class="section-inner experience-section-inner">
     <div class="section-label reveal">Experience</div>
-    <h2 class="section-title reveal">Where I <span>learned by doing</span></h2>
-    <div class="experience-card reveal">
-      <div class="experience-heading">
-        <div>
-          <div class="experience-role">Python with Data Science Intern</div>
-          <div class="experience-company">PySpiders · Bangalore</div>
-        </div>
-        <div class="experience-date">01/2026 — 06/2026</div>
-      </div>
-      <ul class="experience-list">
-        <li>Developed Python scripts with Pandas and NumPy to clean, preprocess, transform, and analyze 15+ real-world datasets.</li>
-        <li>Performed EDA and created 4 interactive dashboards and visualizations with Matplotlib and Seaborn for KPI tracking.</li>
-        <li>Wrote and optimized SQL queries for extraction, joins, filtering, aggregation, and reporting, reducing manual effort by 40%.</li>
-        <li>Automated data processing and reporting workflows with Python and SQL to accelerate weekly business reporting.</li>
-      </ul>
+    <div class="experience-intro reveal">
+      <h2 class="experience-title">Learning by <span>doing.</span></h2>
+      <p>Practical experience across software development and data-focused work.</p>
     </div>
+    <article class="experience-entry reveal">
+      <div class="experience-meta"><time>Oct 2026 &mdash; Present</time><span>Chennai, India</span></div>
+      <div class="experience-content">
+        <div class="experience-entry-heading"><div><h3>Full Stack Developer Intern</h3><p class="experience-company">DGi WORX</p></div><span class="experience-current">Current</span></div>
+        <p class="experience-summary">Developing practical skills in full-stack web application development.</p>
+        <ul class="experience-list">
+          <li>Learning to build and maintain backend services and REST APIs.</li>
+          <li>Working with frontend technologies and database-driven application concepts.</li>
+          <li>Practicing debugging, code organization, and software development best practices.</li>
+          <li>Exploring Cloud and DevOps practices, including Docker, deployment workflows, and CI/CD concepts.</li>
+          <li>Strengthening problem-solving skills through hands-on development and technical learning.</li>
+        </ul>
+        <div class="experience-tags"><span>Web Development</span><span>Backend</span><span>Cloud / DevOps Learning</span></div>
+      </div>
+    </article>
+    <article class="experience-entry reveal">
+      <div class="experience-meta"><time>Jan 2026 &mdash; Jun 2026</time><span>Bengaluru, India</span></div>
+      <div class="experience-content">
+        <div class="experience-entry-heading"><div><h3>Python with Data Science Intern</h3><p class="experience-company">PySpiders</p></div></div>
+        <ul class="experience-list">
+          <li>Developed Python scripts with Pandas and NumPy to clean, preprocess, transform, and analyze 15+ real-world datasets.</li>
+          <li>Performed EDA and created 4 interactive dashboards and visualizations with Matplotlib and Seaborn for KPI tracking.</li>
+          <li>Wrote and optimized SQL queries for extraction, joins, filtering, aggregation, and reporting, reducing manual effort by 40%.</li>
+          <li>Automated data processing and reporting workflows with Python and SQL to accelerate weekly business reporting.</li>
+        </ul>
+        <div class="experience-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Data Visualization</span></div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -145,57 +144,64 @@
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="section-inner">
-    <div class="section-label reveal">Technical Skills</div>
-    <h2 class="section-title reveal">What I <span>know</span></h2>
-    <div class="skills-outer">
-
-      <div class="skill-block reveal">
-        <div class="sb-head">
-          <div class="sb-icon">PY</div>
-          <div><div class="sb-title">Python Full Stack</div><div class="sb-sub">FastAPI · Django · REST APIs</div></div>
-        </div>
-        <div class="skill-row"><div class="sk-top"><span>Python</span><span class="sk-pct">95%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="95"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>FastAPI / REST APIs</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="85"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>Django / MVC-MVT</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="78"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>MySQL / Oracle SQL</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill fa" data-w="82"></div></div></div>
-        <div class="tags-row">
-          <span class="tag">Python</span><span class="tag">Django</span><span class="tag">FastAPI</span>
-          <span class="tag">REST API</span><span class="tag">React.js</span><span class="tag">Docker</span>
-        </div>
-      </div>
-
-      <div class="skill-block reveal">
-        <div class="sb-head">
-          <div class="sb-icon">DS</div>
-          <div><div class="sb-title">Data Science</div><div class="sb-sub">EDA · Visualization · SQL</div></div>
-        </div>
-        <div class="skill-row"><div class="sk-top"><span>Pandas / NumPy</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="88"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>Matplotlib / Seaborn</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="82"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>Statistics & EDA</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="80"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>SQL</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill fc" data-w="80"></div></div></div>
-        <div class="tags-row">
-          <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
-          <span class="tag">Seaborn</span><span class="tag">SQL</span><span class="tag">Jupyter</span>
-        </div>
-      </div>
-
-      <div class="skill-block reveal">
-        <div class="sb-head">
-          <div class="sb-icon">ML</div>
-          <div><div class="sb-title">Machine Learning</div><div class="sb-sub">Scikit-learn · XGBoost · LSTM</div></div>
-        </div>
-        <div class="skill-row"><div class="sk-top"><span>Scikit-Learn</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="85"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>XGBoost</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="78"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>LSTM</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="70"></div></div></div>
-        <div class="skill-row"><div class="sk-top"><span>Model Evaluation</span><span class="sk-pct">76%</span></div><div class="sk-track"><div class="sk-fill fd" data-w="76"></div></div></div>
-        <div class="tags-row">
-          <span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">LSTM</span>
-          <span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">n8n</span>
-        </div>
-      </div>
-
+  <div class="section-inner skills-section-inner">
+    <div class="section-label reveal">Technical Skills (TOOLKIT)</div>
+    <h2 class="section-title reveal">Tools I use to <span>build.</span></h2>
+    <div class="skills-outer skills-reference-grid">
+      <article class="skill-panel reveal">
+        <div class="skill-panel-heading"><span class="skill-number">01</span><h3>Backend engineering</h3></div>
+        <p class="skill-description">Building APIs and application logic.</p>
+        <div class="skill-tags"><span>Python</span><span>FastAPI</span><span>Django</span><span>Flask</span><span>REST APIs</span><span>Pydantic</span></div>
+        <p class="skill-footnote">Core development</p>
+      </article>
+      <article class="skill-panel reveal">
+        <div class="skill-panel-heading"><span class="skill-number">02</span><h3>Frontend</h3></div>
+        <p class="skill-description">Creating usable web interfaces.</p>
+        <div class="skill-tags"><span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        <p class="skill-footnote">Web interfaces</p>
+      </article>
+      <article class="skill-panel reveal">
+        <div class="skill-panel-heading"><span class="skill-number">03</span><h3>Data &amp; storage</h3></div>
+        <p class="skill-description">Working with structured data and analysis.</p>
+        <div class="skill-tags"><span>MySQL</span><span>SQL</span><span>SQLAlchemy</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+        <p class="skill-footnote">Data &amp; databases</p>
+      </article>
+      <article class="skill-panel reveal">
+        <div class="skill-panel-heading"><span class="skill-number">04</span><h3>Delivery &amp; operations</h3></div>
+        <p class="skill-description">Skills to practice through real deployment work.</p>
+        <div class="skill-tags"><span>Git</span><span>GitHub</span><span>Docker</span><span>Linux</span><span>CI/CD learning</span></div>
+        <p class="skill-footnote">Growing focus</p>
+      </article>
+      <article class="skill-panel reveal">
+        <div class="skill-panel-heading"><span class="skill-number">05</span><h3>ML &amp; automation</h3></div>
+        <p class="skill-description">Data workflows and model experiments.</p>
+        <div class="skill-tags"><span>Scikit-learn</span><span>XGBoost</span><span>n8n</span><span>EDA</span><span>SHAP ? learning / project use</span></div>
+        <p class="skill-footnote">Project-based</p>
+      </article>
+      <aside class="skill-principle reveal">
+        <p class="skill-footnote">A principle I follow</p>
+        <h3>Show the work.<br><span>Keep learning.</span></h3>
+        <p>I?m building depth through implementation, debugging, documentation, and feedback ? not just collecting tools.</p>
+      </aside>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HOW I WORK -->
+<section id="approach" class="approach-section">
+  <div class="approach-inner">
+    <div class="approach-intro">
+      <p class="section-label reveal">HOW I WORK</p>
+      <h2>Good software is<br><span>more than code.</span></h2>
+    </div>
+    <ol class="approach-steps">
+      <li><span class="approach-number">01</span><div><h3>Understand the problem</h3><p>Clarify requirements and design the smallest useful solution.</p></div></li>
+      <li><span class="approach-number">02</span><div><h3>Build in small steps</h3><p>Keep code organized, validate inputs, and handle failure paths.</p></div></li>
+      <li><span class="approach-number">03</span><div><h3>Test and document</h3><p>Make behavior reproducible and explain how another developer can run it.</p></div></li>
+      <li><span class="approach-number">04</span><div><h3>Deploy and improve</h3><p>Learn from logs, feedback, reliability issues, and iteration.</p></div></li>
+    </ol>
   </div>
 </section>
 
@@ -204,14 +210,14 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-inner">
-    <div class="section-label reveal">Portfolio</div>
+    <div class="section-label reveal">SELECTED WORK</div>
     <h2 class="section-title reveal">My <span>Projects</span></h2>
 
     <div class="proj-filter reveal">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="python">Python</button>
-      <button class="filter-btn" data-filter="ml">ML / DS</button>
-      <button class="filter-btn" data-filter="data">Data / BI</button>
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
+      <button class="filter-btn" data-filter="ml" aria-pressed="false">ML / DS</button>
+      <button class="filter-btn" data-filter="data" aria-pressed="false">Data / BI</button>
     </div>
 
     <div class="proj-grid">
@@ -306,7 +312,7 @@
         </div>
       </div>
 
-      <div class="proj-card featured reveal" data-cat="ml">
+      <div class="proj-card featured reveal" data-cat="python">
         <div class="proj-top">
           <div class="proj-icon">AI</div>
           <div class="proj-actions">
@@ -438,6 +444,7 @@
     <div class="contact-grid">
       <div class="contact-left reveal">
         <p>I'm actively looking for an <strong style="color:var(--accent)">entry-level opportunity</strong> in Python full-stack development, data, or automation. If you have a role where I can build useful systems and keep learning, let's talk.</p>
+        <a href="./resume.pdf" class="btn btn-primary" download="Santhosh-S-Resume.pdf">Download Resume</a>
         <div class="contact-links">
           <a href="mailto:santhoshsankar599@gmail.com" class="clink">
             <div class="clink-icon">✉</div>
@@ -470,7 +477,7 @@
 </section>
 
 <footer>
-  <p>Designed & built by <span>Santhosh S</span> · 2026 · Made with 💙 &amp; lots of ☕</p>
+  <p>Designed & built by <span>Santhosh S</span> · 2026 · Made with 🤍 &amp; lots of ☕</p>
 </footer>
 <script>
 const contactButton = document.getElementById('sbtn');
