@@ -1,4 +1,4 @@
-﻿# Santhosh S - Developer Portfolio
+# Santhosh S - Developer Portfolio
 
 A responsive single-page portfolio for Santhosh S, a Python Full-Stack Developer and Artificial Intelligence and Data Science graduate.
 
@@ -290,7 +290,7 @@ The portfolio is hosted on GitHub Pages at https://sant-0.github.io/portfolio/. 
 
 ## Resume Download
 
-The navigation and hero download links currently point to `./resume.pdf`. The resume file in the repository is `ascets/Santhosh_S_Developer_resume.pdf`; make sure a root-level `resume.pdf` is present or update the links in `index.html` to point to the file under `ascets/`.
+The navigation and hero download links point to `./ascets/Santhosh_S_Developer_resume.pdf`, which is the resume file included in the repository.
 
 ## Author
 
