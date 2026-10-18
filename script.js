@@ -26,13 +26,8 @@ if (canObserve) {
   revealItems.forEach(showItem);
 }
 
-// Keep the paper navigation surface legible while scrolling.
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  navbar.style.background = window.scrollY > 50
-    ? 'rgba(244,241,233,0.98)'
-    : 'rgba(244,241,233,0.94)';
-});
+
+
 
 // Mobile navigation
 const navToggle = document.querySelector('.nav-toggle');
