@@ -535,3 +535,7 @@ a,button,input,textarea{outline-offset:4px;}a:focus-visible,button:focus-visible
 
 .approach-steps{border-top:0;}
 .approach-steps li:last-child{border-bottom:0;}
+
+@media(max-width:700px){.hero-name{display:block;text-align:left;word-spacing:normal;font-size:clamp(2rem,11vw,3.2rem);}.hero-name-lead{white-space:nowrap;}.hero-name br{display:block;}}
+
+@media(max-width:700px){.nav-role{display:inline;}}
