@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sant-0.github.io/portfolio/sitemap.xml
