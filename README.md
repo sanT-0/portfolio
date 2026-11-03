@@ -1,4 +1,4 @@
-# Santhosh S - Developer Portfolio
+# Santhosh S - AI-Powered Developer Portfolio
 
 A responsive single-page portfolio for Santhosh S, an AI-Powered Full-Stack Developer and Artificial Intelligence and Data Science graduate.
 
