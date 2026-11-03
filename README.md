@@ -1,8 +1,8 @@
-# Santhosh S - Developer Portfolio
+# Santhosh S - AI-Powered Developer Portfolio
 
-A responsive single-page portfolio for Santhosh S, a Python Full-Stack Developer and Artificial Intelligence and Data Science graduate.
+A responsive single-page portfolio for Santhosh S, an AI-Powered Full-Stack Developer and Artificial Intelligence and Data Science graduate.
 
-The portfolio presents professional experience, technical skills, GitHub projects, certifications, and contact information in a clean, responsive interface.
+The portfolio presents AI product work, agent tooling, professional experience, technical skills, GitHub projects, certifications, and contact information in a clean, responsive interface.
 
 ## Live Portfolio
 
@@ -25,10 +25,10 @@ The main entry point is `index.html`.
 - Hero section with engineering focus and resume download links
 - About section with education details and professional highlights
 - Experience section covering current DGi WORX and previous PySpiders internships
-- Technical skills grouped by backend, frontend, data and storage, delivery and operations, and ML and automation
+- Technical skills grouped by backend and APIs, frontend and product, AI and agent tooling, data and storage, and delivery and security
 - A “How I Work” section describing the development approach
-- Project cards linked to GitHub repositories
-- Project filtering by Python, ML / DS, and Data / BI
+- Project cards linked to GitHub repositories, led by AI and agent-tooling work
+- Project filtering by AI / Agents, Python, ML / DS, and Data / BI
 - Certification cards linked to Udemy and LinkedIn verification pages
 - Scroll reveal animations
 - Mobile navigation toggle
@@ -41,7 +41,7 @@ The main entry point is `index.html`.
 
 ### Hero
 
-The hero section introduces Santhosh S and highlights software, API, and automation work, with links to projects, contact information, and the resume.
+The hero section introduces Santhosh S as an AI-powered full-stack developer, highlighting AI products, MCP servers, portable agent skills, and the APIs behind them, with links to projects, contact information, and the resume.
 
 ### About
 
@@ -51,7 +51,7 @@ The About section includes:
 - Tagore Institute of Engineering and Technology
 - CGPA: 7.61 / 10
 - Graduation period: 2022 - 2026
-- Current focus on backend engineering and Cloud / DevOps learning
+- Current focus on AI-powered product engineering and agent tooling
 - Professional highlights and working principles
 
 ### Experience
@@ -73,11 +73,11 @@ PySpiders internship highlights include:
 
 The current skills section groups tools and technologies into:
 
-- Backend engineering: Python, FastAPI, Django, Flask, REST APIs, Pydantic
-- Frontend: React, JavaScript, HTML, CSS
-- Data and storage: MySQL, SQL, SQLAlchemy, Pandas, NumPy, Matplotlib
-- Delivery and operations: Git, GitHub, Docker, Linux, CI/CD learning
-- ML and automation: Scikit-learn, XGBoost, n8n, EDA, SHAP (learning / project use)
+- Backend and APIs: Python, FastAPI, Django, Flask, Hono, Pydantic, REST APIs, SQLAlchemy
+- Frontend and product: TypeScript, React, Next.js, JavaScript, HTML, CSS
+- AI, agents and automation: MCP servers, Agent Skills, LLM workflows, TensorFlow, Keras, Scikit-learn, n8n
+- Data and storage: MySQL, SQL, Pandas, NumPy, Power BI, Matplotlib
+- Delivery and security: Git, GitHub Actions, Docker, Linux, FFmpeg, security design
 
 ### How I Work
 
@@ -85,66 +85,94 @@ The approach section describes four steps: understand the problem, build in smal
 
 ### Projects
 
-The portfolio includes these project entries:
+The portfolio includes these project entries, in display order:
 
-1. **Retail Sales Forecasting and Workflow Automation**
+1. **FacelessPro — AI Video Studio**
+   - Self-hostable AI studio: script to scenes, narration, illustrated stills, captions, and export
+   - Tamil + English code-mixed narration with word-level timing
+   - 1080p / 2K / 4K output in 16:9 and 9:16
+   - REST API and MCP server so an AI assistant can drive it
+   - Repository: https://github.com/sanT-0/facelesspro
+
+2. **NSE Day Trader Skills**
+   - 13 portable agent skills plus standalone standard-library Python CLIs
+   - Indian market overview, scanner, flows, news, fundamentals, entry, exit, simulation, sizing, risk gate, tickets, and alerts
+   - Broker-neutral manual order tickets with a mandatory risk gate and no broker connection
+   - Windows and Linux CI with deterministic ZIP releases
+   - Repository: https://github.com/sanT-0/nse-day-trader-skills
+
+3. **JobTrack — Application Tracker**
+   - JWT authentication, bcrypt hashing, and strict user isolation
+   - Full application lifecycle with search, filters, and an analytics dashboard
+   - 36 automated unit and integration tests
+   - Docker Compose deployment
+   - Repository: https://github.com/sanT-0/JobTrack
+
+4. **WorkGuard — Endpoint Security Control Plane**
+   - Documentation-first architecture for keeping company source code on managed Windows laptops
+   - FastAPI control plane, signed C# endpoint agent, Ed25519 policy signing
+   - DLP exfiltration channel matrix, threat model, and OpenAPI 3.1 contract
+   - Architecture and specification stage, not a shipped product
+   - Repository: https://github.com/sanT-0/WorkGuard
+
+5. **Developer Portfolio Website**
+   - Responsive static portfolio for AI product work, agent tooling, skills, experience, and certifications
+   - Built with HTML5, CSS3, and JavaScript
+   - Hosted with GitHub Pages
+   - Repository: https://github.com/sanT-0/portfolio
+   - Live site: https://sant-0.github.io/portfolio/
+
+6. **Retail Sales Forecasting and Workflow Automation**
    - XGBoost and LSTM forecasting system
    - FastAPI backend
    - n8n workflow automation
    - Docker support
    - Repository: https://github.com/sanT-0/Retail-Forecasting-System-with-Gmail-Automation
 
-2. **Python Banking Application**
-   - Console-based banking simulator
-   - Balance tracking and transaction validation
-   - Python structural pattern matching
-   - Repository: https://github.com/sanT-0/Python-Banking-Program
-
-3. **E-Commerce Sales Performance Dashboard**
+7. **E-Commerce Sales Performance Dashboard**
    - Three-page Power BI dashboard
    - 15+ DAX measures
    - Star schema data modeling
    - Analysis of 150+ transactions
    - Repository: https://github.com/sanT-0/shopindia-powerbi-dashboard
 
-4. **Dataset Analysis and Reporting Workflows**
+8. **Dataset Analysis and Reporting Workflows**
    - Python and SQL analysis across 15+ datasets
    - KPI dashboards and repeatable reporting workflows
    - Based on data science internship work
 
-5. **Python Chatbot**
+9. **Python Chatbot**
    - Intent classification and context handling
    - TensorFlow, Keras, and Flask
    - Repository: https://github.com/sanT-0/Python-Chatbot
 
-6. **Global Development Analytics**
-   - Exploratory analysis of Gapminder global development data
-   - Trends across health, wealth, and population indicators
-   - Repository: https://github.com/sanT-0/Global-Development-Analytics
+10. **Global Development Analytics**
+    - Exploratory analysis of Gapminder global development data
+    - Trends across health, wealth, and population indicators
+    - Repository: https://github.com/sanT-0/Global-Development-Analytics
 
-7. **LeetCode Solutions**
-   - Python and SQL solutions
-   - Data structures, algorithms, database, and interview preparation
-   - Repository: https://github.com/sanT-0/leetcode-solutions
+11. **LeetCode Solutions**
+    - Python and SQL solutions
+    - Data structures, algorithms, database, and interview preparation
+    - Repository: https://github.com/sanT-0/leetcode-solutions
 
-8. **Python Quiz**
-   - Command-line quiz for Python history and syntax fundamentals
-   - Repository: https://github.com/sanT-0/Python-Quiz
+12. **Python Quiz**
+    - Command-line quiz for Python history and syntax fundamentals
+    - Repository: https://github.com/sanT-0/Python-Quiz
 
-9. **Developer Portfolio Website**
-   - Responsive static portfolio for projects, skills, experience, and certifications
-   - Built with HTML5, CSS3, and JavaScript
-   - Hosted with GitHub Pages
-   - Repository: https://github.com/sanT-0/portfolio
-   - Live site: https://sant-0.github.io/portfolio/
+13. **Python Banking Application**
+    - Console-based banking simulator
+    - Balance tracking and transaction validation
+    - Python structural pattern matching
+    - Repository: https://github.com/sanT-0/Python-Banking-Program
 
 ### Certifications
 
 The credentials section includes verified or linked certificates for:
 
+- From Prompt Engineering to Agent Engineering - Udemy
 - Python for Machine Learning - Udemy
 - Python for Beginners - Udemy
-- From Prompt Engineering to Agent Engineering - Udemy
 - HTML and CSS for Beginners From Basic to Advance - Udemy
 - Microsoft Excel: Beginner to Advanced - Udemy
 - Data Science Fundamentals - IBM Cloud DigiLabs
@@ -223,7 +251,7 @@ Edit the hero, About, experience, and contact content in `index.html`.
 
 Copy an existing `.proj-card` inside the `.proj-grid` and update:
 
-- `data-cat`: use `python`, `ml`, or `data`
+- `data-cat`: use `ai`, `python`, `ml`, or `data`
 - Project name
 - Description
 - GitHub links
@@ -296,7 +324,7 @@ The navigation and hero download links point to `./ascets/Santhosh_S_Developer_r
 
 **Santhosh S**
 
-Python Full-Stack Developer | AI and Data Science Graduate
+AI-Powered Full-Stack Developer | AI and Data Science Graduate
 
 - Email: santhoshsankar599@gmail.com
 - GitHub: https://github.com/sanT-0
