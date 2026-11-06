@@ -4,6 +4,8 @@ A responsive single-page portfolio for Santhosh S, an AI-Powered Full-Stack Deve
 
 The portfolio presents AI product work, agent tooling, professional experience, technical skills, GitHub projects, certifications, and contact information in a clean, responsive interface.
 
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/sanT-0/badge.svg)](https://hub.xerj.org/contributors/sanT-0)
+
 ## Live Portfolio
 
 View the hosted portfolio at:
@@ -30,6 +32,8 @@ The main entry point is `index.html`.
 - Project cards linked to GitHub repositories, led by AI and agent-tooling work
 - Project filtering by AI / Agents, Python, ML / DS, and Data / BI
 - Certification cards linked to Udemy and LinkedIn verification pages
+- A recognition row for the XERJ Corpus Hub contributor listing, with the public badge
+- An XERJ Corpus Hub contributor badge in the About sidebar, next to the quick profile
 - Scroll reveal animations
 - Mobile navigation toggle
 - Contact form with client-side validation
@@ -178,6 +182,18 @@ The credentials section includes verified or linked certificates for:
 - Data Science Fundamentals - IBM Cloud DigiLabs
 - Python with Data Science Internship - PySpiders / LinkedIn
 - Cybersecurity Exam Completion - RedTeam Leaders
+
+### Recognition
+
+The credentials section ends with a recognition row for the XERJ Corpus Hub:
+
+- Contributor page: https://hub.xerj.org/contributors/sanT-0
+- Indexed repository: `sanT-0/facelesspro`
+- Selected commit: "Add configurable LLM planner adapters" (16 files, 1,031 lines of TypeScript)
+- Contributor since 1 November 2026, included under the repository's MIT licence
+- Badge: `https://hub.xerj.org/contributors/sanT-0/badge.svg`
+
+The badge image is served by `hub.xerj.org`, so that host sees a request when the credentials section loads. It is declared with explicit `width`/`height`, `loading="lazy"`, `decoding="async"`, and `referrerpolicy="no-referrer"`, and the surrounding link uses `rel="noopener"`. If the badge ever stops resolving, delete the `.recognition` block in `index.html` and the matching rules in `stylesheet.css` — the rest of the section is unaffected.
 
 ## Project Structure
 
